@@ -27,24 +27,23 @@ $color_grey_dark: #d3d3d3;
 		padding: 1rem;
 		
 		margin-bottom: 1rem;
-		h1,
-		h2 {
-			font-family: sans-serif;
-            color: $color_grey_dark;
-		}
-		h1 {
+		
+		.title-card {
 			line-height: 1;
 			margin: 0;
 			font-size: 1.7rem;
+            font-family: sans-serif;
+            color: $color_grey_dark;
 		}
-		h2 {
-			font-size: 1rem;
+		.subtitle-card {
+			font-size: 2rem;
 			font-weight: 300;
 			text-transform: uppercase;
-			
-			margin-top: 5px;
+			font-family: sans-serif;
+            color: $color_grey_dark;
+			margin-top: 10px;
 		}
-        p {
+        .p-card {
             color: $color_grey;
         }
 	}
@@ -57,8 +56,9 @@ $color_grey_dark: #d3d3d3;
 
 		.descripcion {
 			flex-basis: 80%;
-			h2 {
-				color: $color_grey;
+			.subtitle-card {
+                
+				color: $color_grey_dark;
 			}	
 		}
 	}
