@@ -1,0 +1,23 @@
+.subtitle {
+    text-align: center;
+    color: $title_color;
+    font-size: $title_size;
+    margin-top: 5px;
+}
+
+.section-qs {
+    width: $width_desktop;
+    margin: 10px auto;
+    .contenedor-qs {
+        margin: 20px 0;
+
+        .p-portada {
+            color: $description_color;
+            font-size: $description_size;
+            width: $width_desktop;
+            margin: auto;
+            text-align: center;
+        }
+    }
+    
+}
