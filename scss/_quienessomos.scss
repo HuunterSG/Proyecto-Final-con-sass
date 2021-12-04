@@ -21,3 +21,23 @@
     }
     
 }
+
+.border {
+    background: $color_secondary;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.container-img {
+    @include flex (row,nowrap);
+    justify-content: center;
+    .img-qs {
+        width:50%;
+        border-radius:10px;
+    }
+    .text-portada {
+        margin:1rem;
+        text-align: center;
+        font-size: 4rem;
+    }
+}

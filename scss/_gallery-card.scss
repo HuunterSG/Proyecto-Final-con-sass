@@ -1,0 +1,48 @@
+.gallery-card {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 2rem;
+    justify-items: center;
+    margin-top: 2%;    
+
+    .card {
+        width: 100%;
+        
+        height: auto;
+        padding: 2rem;
+        margin: 1rem;
+        border-style: hidden;
+        border-radius: 10px;
+        background-color: rgb(3, 3, 3);
+        text-align: center;
+        box-shadow:inset 2px 2px 5px rgba(250, 235, 32, 0.795);
+        
+        &__img {
+            max-width: 250px;
+            max-height: 200px;
+            border-style: hidden;
+            border-radius: 10px;
+            box-shadow:2px 2px 5px rgba(230, 230, 230, 0.795);
+            
+        }
+
+        &__title {
+            font-size: 1.5rem;
+            text-align: center;
+            margin: 2%;
+            color: rgb(255, 255, 255);
+        }
+
+        li {
+            font-size: 1.2rem;
+            list-style: none;
+            margin: 2%;
+            color:rgb(212, 212, 212);
+        }
+    }
+}
+
+
+
+

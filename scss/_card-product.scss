@@ -2,6 +2,8 @@ $color_bg: rgba(0, 0, 0, 0.836);
 $color_grey: #e2e2e2;
 $color_grey_dark: #d3d3d3;
 
+
+
 .blog-card {
 	display: flex;
 	flex-direction: column;
@@ -31,12 +33,12 @@ $color_grey_dark: #d3d3d3;
 		.title-card {
 			line-height: 1;
 			margin: 0;
-			font-size: 1.7rem;
+			font-size: 1.4rem;
             font-family: sans-serif;
             color: $color_grey_dark;
 		}
 		.subtitle-card {
-			font-size: 2rem;
+			font-size: 1.2rem;
 			font-weight: 300;
 			text-transform: uppercase;
 			font-family: sans-serif;
@@ -44,6 +46,7 @@ $color_grey_dark: #d3d3d3;
 			margin-top: 10px;
 		}
         .p-card {
+            font-size: 1rem;
             color: $color_grey;
         }
 	}
