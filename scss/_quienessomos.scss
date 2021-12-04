@@ -48,12 +48,12 @@
     @include flex (row,nowrap);
     justify-content: center;
     .img-qs {
-        width:50%;
+        width:250px;
         border-radius:10px;
     }
     .text-portada {
         margin:1rem;
         text-align: center;
-        font-size: 4rem;
+        font-size: 3rem;
     }
 }
