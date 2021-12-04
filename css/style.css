@@ -66,6 +66,20 @@
   box-shadow: 0px 2px 2px black;
 }
 
+@media screen and (max-width: 1024px) {
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor .nav {
+    width: 90%;
+  }
+  .contenedor .nav .nav__li {
+    margin-right: 0px;
+    font-size: 1rem;
+  }
+}
 main {
   width: 80%;
   margin: auto;
@@ -171,6 +185,66 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 1024px) {
+  main {
+    width: 100%;
+  }
+  main .section-1 .subtitle {
+    font-size: 1.5rem;
+    color: black;
+  }
+  main .section-1 .p-portada {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 5px;
+  }
+  main .section-1 .contenedor-img {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 360px;
+    padding: 10px;
+    margin: auto;
+  }
+  main .section-1 .contenedor-img__cont {
+    width: 90%;
+    padding: 10px;
+  }
+  main .section-2 .subtitle {
+    font-size: 1.3rem;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+  }
+  main .section-2 .p-portada {
+    font-size: 1.3rem;
+    color: #2e2e2e;
+    text-align: center;
+    margin-top: 10px;
+  }
+  main .section-2 .p-portada a {
+    color: #2e2e2e;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  main .section-2 .contenedor-img2 .card-index {
+    flex-direction: column;
+    width: 360px;
+  }
+  main .section-2 .contenedor-img2 .card-index__img {
+    padding: 10px;
+  }
+  main .section-2 .contenedor-img2 .card-index__text h3 {
+    font-size: 1.2rem;
+  }
+  main .section-2 .contenedor-img2 .card-index__text p {
+    font-size: 1rem;
+  }
+  main .section-2 .contenedor-img2 .card-index__text h4 {
+    font-size: 1.2rem;
+  }
+}
 .subtitle {
   text-align: center;
   color: black;
@@ -276,7 +350,7 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
 @media (min-width: 640px) {
   .blog-card {
     flex-direction: row;
-    max-width: 700px;
+    max-width: 800px;
     height: 12rem;
   }
   .blog-card .descripcion {
@@ -384,6 +458,33 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
   font-size: 1.5rem;
   text-align: start;
   color: #2e2e2e;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer__contact .title__foot {
+    font-size: 1.5rem;
+  }
+  .footer__contact .redes {
+    flex-direction: column;
+  }
+  .footer__ubicacion .title__foot {
+    font-size: 1.5rem;
+  }
+  .footer__ubicacion .description__foot {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .footer__horario .title__foot {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .footer__horario .description__foot {
+    font-size: 1rem;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
