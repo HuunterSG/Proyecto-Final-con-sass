@@ -23,9 +23,25 @@
 }
 
 .border {
-    background: $color_secondary;
+    background: rgba(124, 199, 199, 0.678);
     border-radius: 10px;
     padding: 1rem;
+    border: 2px solid rgba(29, 29, 29, 0.664);
+    box-shadow: 0 2px 5px black;
+
+    .label {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+
+    .input {
+        background: rgb(49, 49, 49);
+        border-radius: 10px;
+        padding: 0.5rem;
+        color: white;
+        border-style: hidden;
+        margin: 5px
+    }
 }
 
 .container-img {
