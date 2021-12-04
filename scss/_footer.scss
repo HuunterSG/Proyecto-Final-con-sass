@@ -70,10 +70,11 @@
     }
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:600px) {
     .footer {
         flex-direction: column;
         &__contact {
+            margin: 5px auto;
             .title__foot {
                 font-size: 1.5rem;
             }
@@ -82,6 +83,7 @@
             }
         }
         &__ubicacion {
+            margin: 5px auto;
             .title__foot {
                 font-size: 1.5rem;
             }
@@ -91,12 +93,49 @@
             }
         }
         &__horario {
+            margin: 5px auto;
             .title__foot {
                 font-size: 1.5rem;
                 text-align: center;
             }
             .description__foot {
                 font-size: 1rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (min-width: 600px) and (max-width:1024px) {
+    .footer {
+        flex-direction: column;
+        &__contact {
+            margin: 5px auto;
+            .title__foot {
+                font-size: 2.4rem;
+            }
+            .redes {
+                flex-direction: column;
+            }
+        }
+        &__ubicacion {
+            margin: 5px auto;
+            .title__foot {
+                font-size: 2.4rem;
+            }
+            .description__foot {
+                font-size: 1.8rem;
+                text-align: center;
+            }
+        }
+        &__horario {
+            margin: 5px auto;
+            .title__foot {
+                font-size: 2.4rem;
+                text-align: center;
+            }
+            .description__foot {
+                font-size: 1.8rem;
                 text-align: center;
             }
         }

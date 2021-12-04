@@ -66,21 +66,60 @@
   box-shadow: 0px 2px 2px black;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
   .contenedor {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+  }
+  .contenedor .titulo__navegacion {
+    font-size: 2.5rem;
+    padding: 5px;
+    margin: auto;
   }
   .contenedor .nav {
     width: 90%;
   }
-  .contenedor .nav .nav__li {
-    margin-right: 0px;
-    font-size: 1rem;
+  .contenedor .nav__ul {
+    justify-content: space-between;
+  }
+  .contenedor .nav__ul .nav__li {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+  .contenedor .nav__ul .nav__li .nav__a {
+    padding: 2px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .contenedor .titulo__navegacion {
+    font-size: 2.5rem;
+    padding: 5px;
+    margin: auto;
+  }
+  .contenedor .nav {
+    width: 90%;
+  }
+  .contenedor .nav__ul {
+    justify-content: space-between;
+  }
+  .contenedor .nav__ul .nav__li {
+    margin: 0;
+    font-size: 1.4rem;
+  }
+  .contenedor .nav__ul .nav__li .nav__a {
+    padding: 2px;
   }
 }
 main {
+  max-width: 1366px;
   width: 80%;
   margin: auto;
 }
@@ -107,7 +146,7 @@ main .section-1 .contenedor-img {
 }
 main .section-1 .contenedor-img__cont {
   width: 100%;
-  padding: 20px;
+  padding: 10px;
 }
 main .section-1 .contenedor-img__cont .cont__portada {
   width: 100%;
@@ -185,16 +224,16 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
   font-size: 1.5rem;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
   main {
     width: 100%;
   }
   main .section-1 .subtitle {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: black;
   }
   main .section-1 .p-portada {
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-align: center;
     margin-top: 5px;
   }
@@ -203,7 +242,7 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    width: 360px;
+    width: 300px;
     padding: 10px;
     margin: auto;
   }
@@ -212,37 +251,97 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
     padding: 10px;
   }
   main .section-2 .subtitle {
-    font-size: 1.3rem;
-    color: black;
-    text-align: center;
-    margin-top: 10px;
+    font-size: 1.1rem;
   }
   main .section-2 .p-portada {
-    font-size: 1.3rem;
-    color: #2e2e2e;
-    text-align: center;
-    margin-top: 10px;
+    font-size: 1.1rem;
   }
   main .section-2 .p-portada a {
     color: #2e2e2e;
     text-decoration: none;
     cursor: pointer;
   }
+  main .section-2 .contenedor-img2 {
+    width: 90%;
+  }
   main .section-2 .contenedor-img2 .card-index {
     flex-direction: column;
-    width: 360px;
+    width: 300px;
   }
   main .section-2 .contenedor-img2 .card-index__img {
     padding: 10px;
   }
   main .section-2 .contenedor-img2 .card-index__text h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   main .section-2 .contenedor-img2 .card-index__text p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   main .section-2 .contenedor-img2 .card-index__text h4 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  main {
+    width: 100%;
+  }
+  main .section-1 .subtitle {
+    font-size: 2rem;
+    color: black;
+  }
+  main .section-1 .p-portada {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 5px;
+  }
+  main .section-1 .contenedor-img {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 500px;
+    padding: 5px;
+    margin: auto;
+  }
+  main .section-1 .contenedor-img__cont {
+    width: 90%;
+    padding: 10px;
+  }
+  main .section-2 .subtitle {
+    font-size: 2rem;
+  }
+  main .section-2 .p-portada {
+    font-size: 2rem;
+  }
+  main .section-2 .p-portada a {
+    color: #2e2e2e;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  main .section-2 .contenedor-img2 {
+    width: 90%;
+  }
+  main .section-2 .contenedor-img2 .card-index {
+    flex-direction: row;
+    width: 95%;
+  }
+  main .section-2 .contenedor-img2 .card-index__img {
+    padding: 10px;
+  }
+  main .section-2 .contenedor-img2 .card-index__img img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px gray;
+  }
+  main .section-2 .contenedor-img2 .card-index__text h3 {
+    font-size: 1.1rem;
+  }
+  main .section-2 .contenedor-img2 .card-index__text p {
+    font-size: 0.9rem;
+  }
+  main .section-2 .contenedor-img2 .card-index__text h4 {
+    font-size: 1.1rem;
   }
 }
 .subtitle {
@@ -460,15 +559,21 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
   color: #2e2e2e;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
   .footer {
     flex-direction: column;
+  }
+  .footer__contact {
+    margin: 5px auto;
   }
   .footer__contact .title__foot {
     font-size: 1.5rem;
   }
   .footer__contact .redes {
     flex-direction: column;
+  }
+  .footer__ubicacion {
+    margin: 5px auto;
   }
   .footer__ubicacion .title__foot {
     font-size: 1.5rem;
@@ -477,12 +582,50 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
     font-size: 1rem;
     text-align: center;
   }
+  .footer__horario {
+    margin: 5px auto;
+  }
   .footer__horario .title__foot {
     font-size: 1.5rem;
     text-align: center;
   }
   .footer__horario .description__foot {
     font-size: 1rem;
+    text-align: center;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer__contact {
+    margin: 5px auto;
+  }
+  .footer__contact .title__foot {
+    font-size: 2.4rem;
+  }
+  .footer__contact .redes {
+    flex-direction: column;
+  }
+  .footer__ubicacion {
+    margin: 5px auto;
+  }
+  .footer__ubicacion .title__foot {
+    font-size: 2.4rem;
+  }
+  .footer__ubicacion .description__foot {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .footer__horario {
+    margin: 5px auto;
+  }
+  .footer__horario .title__foot {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+  .footer__horario .description__foot {
+    font-size: 1.8rem;
     text-align: center;
   }
 }

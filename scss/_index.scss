@@ -1,4 +1,5 @@
 main {
+    max-width: 1366px;
     width: $width_desktop;
     margin: auto;
     .section-1{
@@ -25,7 +26,7 @@ main {
             margin: auto;
             &__cont {
                 width: 100%;
-                padding: 20px;
+                padding: 10px;
                 .cont__portada{
                     width:100%;
                     height: 150px;
@@ -109,17 +110,17 @@ main {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
     main {
         width: 100%;
         .section-1{
             
             .subtitle{
-                font-size: 1.5rem;
+                font-size: 1.3rem;
                 color: $title_color;
             }
             .p-portada {
-                font-size: 1.3rem;
+                font-size: 1rem;
                 text-align: center;
                 margin-top: 5px;
             }
@@ -128,7 +129,7 @@ main {
                 flex-direction: column;
                 flex-wrap: wrap;
                 align-items: center;
-                width: 360px;
+                width: 300px;
                 padding: 10px;
                 margin: auto;
                 
@@ -140,16 +141,12 @@ main {
         }
         .section-2 {
             .subtitle {
-                font-size: 1.3rem;
-                color: $title_color;
-                text-align: center;
-                margin-top: 10px;
+                font-size: 1.1rem;
+
             }
             .p-portada {
-                font-size: 1.3rem;
-                color: $description_color;
-                text-align: center;
-                margin-top: 10px;
+                font-size: 1.1rem;
+
                 a { 
                     color: $description_color;
                     text-decoration: none;
@@ -157,21 +154,96 @@ main {
                 }
             }
             .contenedor-img2 {
+                width: $width_mobil;
                 .card-index {                    
                     flex-direction: column;
-                    width: 360px;                        
+                    width: 300px;                        
                     &__img {                        
                         padding: 10px;
                     }
                     &__text { 
                         h3 {
-                            font-size: 1.2rem;
+                            font-size: 1.1rem;
                         }
                         p {
-                            font-size: 1rem;
+                            font-size: 0.9rem;
                         }
                         h4 {
-                            font-size: 1.2rem;
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:600px) and (max-width: 1024px) {
+    main {
+        width: 100%;
+        .section-1{
+            
+            .subtitle{
+                font-size: 2rem;
+                color: $title_color;
+            }
+            .p-portada {
+                font-size: 1.5rem;
+                text-align: center;
+                margin-top: 5px;
+            }
+            .contenedor-img {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                width: 500px;
+                padding: 5px;
+                margin: auto;
+                
+                &__cont {
+                    width: 90%;
+                    padding: 10px;
+                }
+            }
+        }
+        .section-2 {
+            .subtitle {
+                font-size: 2rem;
+
+            }
+            .p-portada {
+                font-size: 2rem;
+
+                a { 
+                    color: $description_color;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+            .contenedor-img2 {
+                width: $width_mobil;
+                .card-index {                    
+                    flex-direction: row;
+                    width: 95%;                        
+                    &__img {                        
+                        padding: 10px;                        
+                        img {
+                            width: 300px;
+                            height: 200px;
+                            border-radius: 10px;
+                            box-shadow: 2px 2px 2px gray;
+                        }
+                    }
+                    &__text { 
+                        h3 {
+                            font-size: 1.1rem;
+                        }
+                        p {
+                            font-size: 0.9rem;
+                        }
+                        h4 {
+                            font-size: 1.1rem;
                         }
                     }
                 }
