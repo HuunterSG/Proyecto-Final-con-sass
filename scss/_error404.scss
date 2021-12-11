@@ -1,0 +1,55 @@
+main {
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    .title {
+        font-size: 8rem;
+    }
+    .p-404 {
+        font-size: 4rem;
+        margin:40px auto;
+    }
+    .a-404 {
+        text-decoration: none;
+        font-size: 4rem;
+        cursor: pointer;
+        color: black;
+        font-family: fantasy;
+        border: double 3px black;
+        padding: 5px;
+        border-radius: 10px;
+    }
+}
+
+/* RESPONSIVE DISPOSITIVOS PEQUEÑOS*/
+@media screen and (max-width: 600px) {
+    main {
+        .title {
+            font-size: 3rem;
+        }
+        .p-404 {
+            font-size: 1.5rem;
+        }
+        .a-404 {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+/* RESPONSIVE MEDIANOS*/
+@media (min-width:600px) and (max-width: 1280px) {
+    main {
+        .title {
+            font-size: 5rem;
+        }
+        .p-404 {
+            font-size: 3rem;
+        }
+        .a-404 {
+            font-size: 3rem;
+        }
+    }
+}

@@ -581,6 +581,56 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
     font-size: 1.2rem;
   }
 }
+main {
+  width: 80%;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .title {
+  font-size: 8rem;
+}
+main .p-404 {
+  font-size: 4rem;
+  margin: 40px auto;
+}
+main .a-404 {
+  text-decoration: none;
+  font-size: 4rem;
+  cursor: pointer;
+  color: black;
+  font-family: fantasy;
+  border: double 3px black;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/* RESPONSIVE DISPOSITIVOS PEQUEÑOS*/
+@media screen and (max-width: 600px) {
+  main .title {
+    font-size: 3rem;
+  }
+  main .p-404 {
+    font-size: 1.5rem;
+  }
+  main .a-404 {
+    font-size: 1.5rem;
+  }
+}
+/* RESPONSIVE MEDIANOS*/
+@media (min-width: 600px) and (max-width: 1280px) {
+  main .title {
+    font-size: 5rem;
+  }
+  main .p-404 {
+    font-size: 3rem;
+  }
+  main .a-404 {
+    font-size: 3rem;
+  }
+}
 .footer {
   width: 100%;
   margin: auto;
