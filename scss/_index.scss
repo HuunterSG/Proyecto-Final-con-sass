@@ -9,6 +9,7 @@ main {
             text-align: center;
             margin-top: 15px;
             margin-bottom: 15px;
+            font-family: $font_title;
         }
         .p-portada {
             font-size: $description_size;
@@ -28,12 +29,13 @@ main {
                 width: 100%;
                 padding: 10px;
                 .cont__portada{
+                    object-fit: cover;
                     width:100%;
                     height: 150px;
                     margin: auto;
-                    border-style: hidden;
+                    border-style: double;
                     border-radius: 10px;
-                    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.733);
+                    box-shadow: 6px 6px 5px rgb(0, 0, 0);
                 }
             }
             
@@ -77,6 +79,7 @@ main {
                     padding: 20px;
                 
                     img {
+                        
                         width: 100%;
                         height: 200px;
                         border-radius: 10px;
@@ -157,11 +160,13 @@ main {
                 width: $width_mobil;
                 .card-index {                    
                     flex-direction: column;
-                    width: 300px;                        
+                    width: 300px;   
+                    padding:10px;                     
                     &__img {                        
                         padding: 10px;
                     }
                     &__text { 
+                        
                         h3 {
                             font-size: 1.1rem;
                         }
@@ -178,7 +183,7 @@ main {
     }
 }
 
-@media (min-width:600px) and (max-width: 1024px) {
+@media (min-width:600px) and (max-width: 1280px) {
     main {
         width: 100%;
         .section-1{

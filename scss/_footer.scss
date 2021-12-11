@@ -16,9 +16,10 @@
         }
 
         .title__foot {
-            font-size: 2rem;
+            font-size: $description_size;
             text-align: center;
             color: $title_color;
+            margin-bottom: 5px;
         }
         .redes {
             display: flex;
@@ -29,7 +30,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                font-size: 1.5rem;
+                font-size: 1.3rem;
                 text-decoration: none;
                 color: $description_color;
             }
@@ -41,13 +42,14 @@
         margin: 5px;
 
         .title__foot {
-            font-size: 2rem;
+            font-size: $description_size;
             text-align: center;
             color: $title_color;
+            margin-bottom: 5px;
         }
 
         .description__foot {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             text-align: start;
             color: $description_color;
         }
@@ -57,15 +59,17 @@
         margin: 5px;
 
         .title__foot {
-            font-size: 2rem;
+            font-size: $description_size;
             text-align: center;
             color: $title_color;
+            margin-bottom: 5px;
         }
         
         .description__foot {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             text-align: start;
             color: $description_color;
+            margin-bottom: 15px;
         }
     }
 }
@@ -88,7 +92,7 @@
                 font-size: 1.5rem;
             }
             .description__foot {
-                font-size: 1rem;
+                font-size: 1.2rem;
                 text-align: center;
             }
         }
@@ -99,20 +103,20 @@
                 text-align: center;
             }
             .description__foot {
-                font-size: 1rem;
+                font-size: 1.2rem;
                 text-align: center;
             }
         }
     }
 }
 
-@media (min-width: 600px) and (max-width:1024px) {
+@media (min-width: 600px) and (max-width:1280px) {
     .footer {
         flex-direction: column;
         &__contact {
             margin: 5px auto;
             .title__foot {
-                font-size: 2.4rem;
+                font-size: 2rem;
             }
             .redes {
                 flex-direction: column;
@@ -121,7 +125,7 @@
         &__ubicacion {
             margin: 5px auto;
             .title__foot {
-                font-size: 2.4rem;
+                font-size: 2rem;
             }
             .description__foot {
                 font-size: 1.8rem;
@@ -131,7 +135,7 @@
         &__horario {
             margin: 5px auto;
             .title__foot {
-                font-size: 2.4rem;
+                font-size: 2rem;
                 text-align: center;
             }
             .description__foot {

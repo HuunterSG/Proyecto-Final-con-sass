@@ -1,6 +1,6 @@
 .contenedor {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     width: 100%;
     align-items: center;
     justify-content: space-between;
@@ -25,7 +25,7 @@
             flex-direction: row;
             width: 100%;
             align-items:center;
-            justify-content: flex-end;
+            justify-content: flex-start;
             list-style: none;
 
             .nav__li {
@@ -63,6 +63,7 @@
         }
         .nav {
             width: $width_mobil;
+            margin-top: 10px;
             &__ul{
                 justify-content: space-between;
                 .nav__li {
@@ -90,6 +91,7 @@
         }
         .nav {
             width: $width_mobil;
+            margin-top: 10px;
             &__ul{
                 justify-content: space-between;
                 .nav__li {

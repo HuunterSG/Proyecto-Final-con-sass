@@ -1,8 +1,10 @@
 .subtitle {
-    text-align: center;
-    color: $title_color;
     font-size: $title_size;
-    margin-top: 5px;
+    color: $title_color;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: $font_title;
 }
 
 .section-qs {
@@ -14,7 +16,7 @@
         .p-portada {
             color: $description_color;
             font-size: $description_size;
-            width: $width_desktop;
+            width: 100%;
             margin: auto;
             text-align: center;
         }
@@ -25,35 +27,33 @@
 .border {
     background: rgba(124, 199, 199, 0.678);
     border-radius: 10px;
+    margin: 40px auto;
     padding: 1rem;
     border: 2px solid rgba(29, 29, 29, 0.664);
     box-shadow: 0 2px 5px black;
+    width: 80%;
 
     .label {
+        
         font-size: 1.2rem;
-        text-transform: uppercase;
+        margin: 15px auto;
     }
 
     .input {
         background: rgb(49, 49, 49);
         border-radius: 10px;
         padding: 0.5rem;
-        color: white;
+        color: rgb(121, 121, 121);
         border-style: hidden;
-        margin: 5px
+        margin: 15px auto;
+        width: 100%;
+        resize: none;
+        font-family: $font_title;
     }
-}
 
-.container-img {
-    @include flex (row,nowrap);
-    justify-content: center;
-    .img-qs {
-        width:250px;
-        border-radius:10px;
+    .inputc {
+        margin-top: 10px;
+        padding: 1rem;
     }
-    .text-portada {
-        margin:1rem;
-        text-align: center;
-        font-size: 3rem;
-    }
+
 }

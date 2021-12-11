@@ -10,20 +10,21 @@
     .card {
         width: 100%;
         height: auto;
-        padding: 2rem;
+        padding: 1rem;
         margin: 1rem;
         border-style: hidden;
-        border-radius: 10px;
-        background-color: rgba(0, 46, 48, 0.849);
+        border-radius: 20px;
+        background-color: rgba(1, 103, 143, 0.637);
         text-align: center;
-        box-shadow:inset 2px 2px 5px rgba(3, 3, 0, 0.795);
+        box-shadow:inset 3px 3px 4px rgba(255, 255, 255, 0.795);
         
         &__img {
-            max-width: 250px;
-            max-height: 200px;
-            border-style: hidden;
+            width: 250px;
+            height: 200px;
+            border-style: double;
             border-radius: 10px;
-            box-shadow:2px 2px 5px rgba(255, 253, 253, 0.795);
+            border-color: black;
+            box-shadow: 3px 3px 5px rgba(24, 24, 24, 0.897);
             
         }
 
@@ -67,7 +68,7 @@
     
 }
 
-@media (min-width:600px) and (max-width:1024px) {
+@media (min-width:600px) and (max-width:1280px) {
     .gallery-card {
         width: 100%;
         display:grid;

@@ -9,13 +9,13 @@
 }
 
 .subtitle {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: black;
   text-align: center;
 }
 
 .p-portada {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: black;
   text-align: center;
   margin: 1rem auto;
@@ -23,16 +23,16 @@
 
 .contenedor {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  background-color: #5c8ab6;
+  background-color: #95b7d6;
   box-shadow: 2px 2px 5px black;
   padding: 5px 0;
 }
 .contenedor .titulo__navegacion {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: black;
   text-decoration: none;
   padding: 10px;
@@ -47,7 +47,7 @@
   flex-direction: row;
   width: 100%;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   list-style: none;
 }
 .contenedor .nav__ul .nav__li {
@@ -80,6 +80,7 @@
   }
   .contenedor .nav {
     width: 90%;
+    margin-top: 10px;
   }
   .contenedor .nav__ul {
     justify-content: space-between;
@@ -106,6 +107,7 @@
   }
   .contenedor .nav {
     width: 90%;
+    margin-top: 10px;
   }
   .contenedor .nav__ul {
     justify-content: space-between;
@@ -124,14 +126,15 @@ main {
   margin: auto;
 }
 main .section-1 .subtitle {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: black;
   text-align: center;
   margin-top: 15px;
   margin-bottom: 15px;
+  font-family: "Times New Roman", Times, serif;
 }
 main .section-1 .p-portada {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #2e2e2e;
   text-align: center;
   margin-top: 10px;
@@ -149,21 +152,22 @@ main .section-1 .contenedor-img__cont {
   padding: 10px;
 }
 main .section-1 .contenedor-img__cont .cont__portada {
+  object-fit: cover;
   width: 100%;
   height: 150px;
   margin: auto;
-  border-style: hidden;
+  border-style: double;
   border-radius: 10px;
-  box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.733);
+  box-shadow: 6px 6px 5px black;
 }
 main .section-2 .subtitle {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: black;
   text-align: center;
   margin-top: 10px;
 }
 main .section-2 .p-portada {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #2e2e2e;
   text-align: center;
   margin-top: 10px;
@@ -267,6 +271,7 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
   main .section-2 .contenedor-img2 .card-index {
     flex-direction: column;
     width: 300px;
+    padding: 10px;
   }
   main .section-2 .contenedor-img2 .card-index__img {
     padding: 10px;
@@ -281,7 +286,7 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
     font-size: 1.1rem;
   }
 }
-@media (min-width: 600px) and (max-width: 1024px) {
+@media (min-width: 600px) and (max-width: 1280px) {
   main {
     width: 100%;
   }
@@ -345,10 +350,12 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
   }
 }
 .subtitle {
-  text-align: center;
+  font-size: 2.5rem;
   color: black;
-  font-size: 3rem;
-  margin-top: 5px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .section-qs {
@@ -360,8 +367,8 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
 }
 .section-qs .contenedor-qs .p-portada {
   color: #2e2e2e;
-  font-size: 2rem;
-  width: 80%;
+  font-size: 1.6rem;
+  width: 100%;
   margin: auto;
   text-align: center;
 }
@@ -369,41 +376,30 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
 .border {
   background: rgba(124, 199, 199, 0.678);
   border-radius: 10px;
+  margin: 40px auto;
   padding: 1rem;
   border: 2px solid rgba(29, 29, 29, 0.664);
   box-shadow: 0 2px 5px black;
+  width: 80%;
 }
 .border .label {
   font-size: 1.2rem;
-  text-transform: uppercase;
+  margin: 15px auto;
 }
 .border .input {
   background: #313131;
   border-radius: 10px;
   padding: 0.5rem;
-  color: white;
+  color: #797979;
   border-style: hidden;
-  margin: 5px;
-}
-
-.container-img {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
+  margin: 15px auto;
   width: 100%;
-  padding: 20px;
-  margin: auto;
-  justify-content: center;
+  resize: none;
+  font-family: "Times New Roman", Times, serif;
 }
-.container-img .img-qs {
-  width: 250px;
-  border-radius: 10px;
-}
-.container-img .text-portada {
-  margin: 1rem;
-  text-align: center;
-  font-size: 3rem;
+.border .inputc {
+  margin-top: 10px;
+  padding: 1rem;
 }
 
 .blog-card {
@@ -473,20 +469,21 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
 .gallery-card .card {
   width: 100%;
   height: auto;
-  padding: 2rem;
+  padding: 1rem;
   margin: 1rem;
   border-style: hidden;
-  border-radius: 10px;
-  background-color: rgba(0, 46, 48, 0.849);
+  border-radius: 20px;
+  background-color: rgba(1, 103, 143, 0.637);
   text-align: center;
-  box-shadow: inset 2px 2px 5px rgba(3, 3, 0, 0.795);
+  box-shadow: inset 3px 3px 4px rgba(255, 255, 255, 0.795);
 }
 .gallery-card .card__img {
-  max-width: 250px;
-  max-height: 200px;
-  border-style: hidden;
+  width: 250px;
+  height: 200px;
+  border-style: double;
   border-radius: 10px;
-  box-shadow: 2px 2px 5px rgba(255, 253, 253, 0.795);
+  border-color: black;
+  box-shadow: 3px 3px 5px rgba(24, 24, 24, 0.897);
 }
 .gallery-card .card__title {
   font-size: 1.5rem;
@@ -520,7 +517,7 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
     font-size: 1.2rem;
   }
 }
-@media (min-width: 600px) and (max-width: 1024px) {
+@media (min-width: 600px) and (max-width: 1280px) {
   .gallery-card {
     width: 100%;
     display: grid;
@@ -542,7 +539,7 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
 .footer {
   width: 100%;
   margin: auto;
-  background-color: #5c8ab6;
+  background-color: #95b7d6;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -556,9 +553,10 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
   width: 30px;
 }
 .footer__contact .title__foot {
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-align: center;
   color: black;
+  margin-bottom: 5px;
 }
 .footer__contact .redes {
   display: flex;
@@ -568,7 +566,7 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-decoration: none;
   color: #2e2e2e;
 }
@@ -576,12 +574,13 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
   margin: 5px;
 }
 .footer__ubicacion .title__foot {
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-align: center;
   color: black;
+  margin-bottom: 5px;
 }
 .footer__ubicacion .description__foot {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: start;
   color: #2e2e2e;
 }
@@ -589,14 +588,16 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
   margin: 5px;
 }
 .footer__horario .title__foot {
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-align: center;
   color: black;
+  margin-bottom: 5px;
 }
 .footer__horario .description__foot {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: start;
   color: #2e2e2e;
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width: 600px) {
@@ -619,7 +620,7 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
     font-size: 1.5rem;
   }
   .footer__ubicacion .description__foot {
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
   }
   .footer__horario {
@@ -630,11 +631,11 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
     text-align: center;
   }
   .footer__horario .description__foot {
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
   }
 }
-@media (min-width: 600px) and (max-width: 1024px) {
+@media (min-width: 600px) and (max-width: 1280px) {
   .footer {
     flex-direction: column;
   }
@@ -642,7 +643,7 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
     margin: 5px auto;
   }
   .footer__contact .title__foot {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   .footer__contact .redes {
     flex-direction: column;
@@ -651,7 +652,7 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
     margin: 5px auto;
   }
   .footer__ubicacion .title__foot {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   .footer__ubicacion .description__foot {
     font-size: 1.8rem;
@@ -661,7 +662,7 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
     margin: 5px auto;
   }
   .footer__horario .title__foot {
-    font-size: 2.4rem;
+    font-size: 2rem;
     text-align: center;
   }
   .footer__horario .description__foot {
