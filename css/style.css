@@ -29,7 +29,7 @@
   justify-content: space-between;
   background-color: #95b7d6;
   box-shadow: 2px 2px 5px black;
-  padding: 5px 0;
+  padding: 5px 20px;
 }
 .contenedor .titulo__navegacion {
   font-size: 2.5rem;
