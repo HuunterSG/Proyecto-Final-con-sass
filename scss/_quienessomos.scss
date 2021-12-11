@@ -1,3 +1,4 @@
+/* DESCRIPCION QUIENES SOMOS*/
 .subtitle {
     font-size: $title_size;
     color: $title_color;
@@ -6,13 +7,11 @@
     margin-bottom: 15px;
     font-family: $font_title;
 }
-
 .section-qs {
     width: $width_desktop;
     margin: 10px auto;
     .contenedor-qs {
         margin: 20px 0;
-
         .p-portada {
             color: $description_color;
             font-size: $description_size;
@@ -23,7 +22,7 @@
     }
     
 }
-
+/* FORMULARIO */
 .border {
     background: rgba(124, 199, 199, 0.678);
     border-radius: 10px;
@@ -32,13 +31,11 @@
     border: 2px solid rgba(29, 29, 29, 0.664);
     box-shadow: 0 2px 5px black;
     width: 80%;
-
     .label {
         
         font-size: 1.2rem;
         margin: 15px auto;
     }
-
     .input {
         background: rgb(49, 49, 49);
         border-radius: 10px;
@@ -50,10 +47,20 @@
         resize: none;
         font-family: $font_title;
     }
-
     .inputc {
         margin-top: 10px;
         padding: 1rem;
     }
-
+}
+/* RESPONSIVE DISPOSITIVOS PEQUEÑOS*/
+@media screen and (max-width: 600px) {
+    .border {
+        width: 100%;
+    }
+}
+/* RESPONSIVE MEDIANOS*/
+@media (min-width:600px) and (max-width: 1280px) {
+    .border {
+        width: 90%;
+    }
 }

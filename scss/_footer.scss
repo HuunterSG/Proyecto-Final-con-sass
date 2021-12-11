@@ -73,7 +73,7 @@
         }
     }
 }
-
+/* RESPONSIVE DISPOSITIVOS PEQUEÑOS*/
 @media screen and (max-width:600px) {
     .footer {
         flex-direction: column;
@@ -109,7 +109,7 @@
         }
     }
 }
-
+/* RESPONSIVE MEDIANOS*/
 @media (min-width: 600px) and (max-width:1280px) {
     .footer {
         flex-direction: column;

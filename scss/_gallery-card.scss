@@ -1,3 +1,16 @@
+/* TEXTO DE SERVICIO Y GALERIA */
+.subtitle {
+    font-size: $title_size;
+    color: $title_color;
+    text-align: center;
+}
+.p-portada {
+    font-size: $description_size;
+    color: $title_color;
+    text-align: center;
+    margin:1rem auto;
+}
+/* CARDS SERVICIOS Y GALERIA*/
 .gallery-card {
     display:grid;
     width: 100%;
@@ -43,8 +56,14 @@
         }
     }
 }
-
+/* RESPONSIVE DISPOSITIVOS PEQUEÑOS*/
 @media screen and (max-width:600px) {
+    .subtitle {
+        font-size: 1.3rem;
+    }
+    .p-portada {
+        font-size: 1rem;
+    }
     .gallery-card {
         width: 100%;
         display:grid;
@@ -67,8 +86,14 @@
     }
     
 }
-
+/* RESPONSIVE MEDIANOS*/
 @media (min-width:600px) and (max-width:1280px) {
+    .subtitle {
+        font-size: 2rem;
+    }
+    .p-portada {
+        font-size: 1.5rem;
+    }
     .gallery-card {
         width: 100%;
         display:grid;

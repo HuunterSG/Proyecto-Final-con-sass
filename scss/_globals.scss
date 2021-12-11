@@ -3,20 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* FONDO DE BODY*/
 .fondo {
     background-color: $color_primary;
     
 }
 
-.subtitle {
-    font-size: $title_size;
-    color: $title_color;
-    text-align: center;
-}
-.p-portada {
-    font-size: $description_size;
-    color: $title_color;
-    text-align: center;
-    margin:1rem auto;
-}

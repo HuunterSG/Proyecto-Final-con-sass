@@ -1,24 +1,14 @@
+@charset "UTF-8";
+/* VARIABLES DE USO GENERAL*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* FONDO DE BODY*/
 .fondo {
   background-color: #a0c9cc;
-}
-
-.subtitle {
-  font-size: 2.5rem;
-  color: black;
-  text-align: center;
-}
-
-.p-portada {
-  font-size: 1.6rem;
-  color: black;
-  text-align: center;
-  margin: 1rem auto;
 }
 
 .contenedor {
@@ -66,6 +56,7 @@
   box-shadow: 0px 2px 2px black;
 }
 
+/* RESPONSIVE DISPOSITIVOS PEQUEÑOS*/
 @media screen and (max-width: 600px) {
   .contenedor {
     display: flex;
@@ -124,6 +115,8 @@ main {
   max-width: 1366px;
   width: 80%;
   margin: auto;
+  /* TITULO DESCRIPCION Y 3 IMAGENES PRINCIPALES DE INDEX*/
+  /* CARDS DE TIPOS DE PRODUCTOS*/
 }
 main .section-1 .subtitle {
   font-size: 2.5rem;
@@ -228,6 +221,7 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
   font-size: 1.5rem;
 }
 
+/* RESPONSIVE DISPOSITIVOS PEQUEÑOS*/
 @media screen and (max-width: 600px) {
   main {
     width: 100%;
@@ -286,6 +280,7 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
     font-size: 1.1rem;
   }
 }
+/* RESPONSIVE MEDIANOS*/
 @media (min-width: 600px) and (max-width: 1280px) {
   main {
     width: 100%;
@@ -349,6 +344,7 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
     font-size: 1.1rem;
   }
 }
+/* DESCRIPCION QUIENES SOMOS*/
 .subtitle {
   font-size: 2.5rem;
   color: black;
@@ -373,6 +369,7 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
   text-align: center;
 }
 
+/* FORMULARIO */
 .border {
   background: rgba(124, 199, 199, 0.678);
   border-radius: 10px;
@@ -402,6 +399,20 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
   padding: 1rem;
 }
 
+/* RESPONSIVE DISPOSITIVOS PEQUEÑOS*/
+@media screen and (max-width: 600px) {
+  .border {
+    width: 100%;
+  }
+}
+/* RESPONSIVE MEDIANOS*/
+@media (min-width: 600px) and (max-width: 1280px) {
+  .border {
+    width: 90%;
+  }
+}
+/* VARIABLES CARD PRODUCTOS*/
+/* RESPONSIVE DISPOSITIVOS PEQUEÑOS*/
 .blog-card {
   width: 90%;
   display: flex;
@@ -414,6 +425,7 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
   line-height: 1.4;
   font-family: sans-serif;
   border-radius: 10px;
+  /* RESPONSIVE MEDIANOS*/
 }
 .blog-card .foto img {
   width: 100%;
@@ -457,6 +469,21 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
   }
 }
 
+/* TEXTO DE SERVICIO Y GALERIA */
+.subtitle {
+  font-size: 2.5rem;
+  color: black;
+  text-align: center;
+}
+
+.p-portada {
+  font-size: 1.6rem;
+  color: black;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+/* CARDS SERVICIOS Y GALERIA*/
 .gallery-card {
   display: grid;
   width: 100%;
@@ -498,7 +525,16 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
   color: black;
 }
 
+/* RESPONSIVE DISPOSITIVOS PEQUEÑOS*/
 @media screen and (max-width: 600px) {
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .p-portada {
+    font-size: 1rem;
+  }
+
   .gallery-card {
     width: 100%;
     display: grid;
@@ -517,7 +553,16 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
     font-size: 1.2rem;
   }
 }
+/* RESPONSIVE MEDIANOS*/
 @media (min-width: 600px) and (max-width: 1280px) {
+  .subtitle {
+    font-size: 2rem;
+  }
+
+  .p-portada {
+    font-size: 1.5rem;
+  }
+
   .gallery-card {
     width: 100%;
     display: grid;
@@ -600,6 +645,7 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
   margin-bottom: 15px;
 }
 
+/* RESPONSIVE DISPOSITIVOS PEQUEÑOS*/
 @media screen and (max-width: 600px) {
   .footer {
     flex-direction: column;
@@ -635,6 +681,7 @@ main .section-2 .contenedor-img2 .card-index__text h4 {
     text-align: center;
   }
 }
+/* RESPONSIVE MEDIANOS*/
 @media (min-width: 600px) and (max-width: 1280px) {
   .footer {
     flex-direction: column;

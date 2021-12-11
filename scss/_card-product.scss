@@ -1,9 +1,10 @@
+/* VARIABLES CARD PRODUCTOS*/
 $color_bg: rgba(0, 0, 0, 0.836);
 $color_grey: #e2e2e2;
 $color_grey_dark: #d3d3d3;
 
 
-
+/* RESPONSIVE DISPOSITIVOS PEQUEÑOS*/
 .blog-card {
 	width: 90%;
 	display: flex;
@@ -51,13 +52,11 @@ $color_grey_dark: #d3d3d3;
             color: $color_grey;
         }
 	}
+/* RESPONSIVE MEDIANOS*/
 	@media (min-width: 640px) {
 		flex-direction: row;
         max-width: 800px;
 		height: 12rem;
-		
-		
-
 		.descripcion {
 			flex-basis: 80%;
 			.subtitle-card {
