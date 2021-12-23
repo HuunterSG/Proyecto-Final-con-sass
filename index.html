@@ -16,15 +16,22 @@
 </head>
 <body class="fondo" >
     <!--ENCABEZADO-->
-    <header class="contenedor">
-        <h1><a href="#" class="titulo__navegacion">AllDetailingCar</a></h1>
-        <nav class="nav">
+    <header >
+        <div class="container-encabezado" >
+            <div class="cont-img" >
+                <img src="./img/menu.png" id="icono-menu" >
+            </div>
+            <div class="cont-title">
+            <h1><a href="../index.html" class="titulo_navegacion">AllDetailingCar</a></h1>
+            </div>
+        </div>
+        <nav  id="cont-menu">
             <ul class="nav__ul">
-                <li class="nav__li"><a href="#" class="nav__a">Inicio</a></li>
-                <li class="nav__li"><a href="./pages/quienes-somos.html" class="nav__a">Quienes Somos</a></li>
-                <li class="nav__li"><a href="./pages/productos.html" class="nav__a">Productos</a></li>
-                <li class="nav__li"><a href="./pages/servicios.html" class="nav__a">Servicios</a></li>
-                <li class="nav__li"><a href="./pages/galeria.html" class="nav__a">Galería</a></li>
+                <a class="nav__a" href="#"><li class="nav__li">Inicio</li></a>
+                <a class="nav__a" href="./pages/quienes-somos.html"><li class="nav__li">Quienes Somos</li></a>
+                <a class="nav__a" href="./pages/productos.html"><li class="nav__li">Productos</li></a>
+                <a class="nav__a" href="./pages/servicios.html"><li class="nav__li">Servicios</li></a>
+                <a class="nav__a" href="./pages/galeria.html"><li class="nav__li">Galeria</li></a>
             </ul>
         </nav>
     </header>
@@ -103,5 +110,6 @@
             <p class="description__foot">Lunes a Viernes de 10hs a 17hs. <br> Feriados y fin de semana consultar. </p>
         </div>
     </footer>
+    <script src="./js/sidebar.js"></script>
 </body>
 </html>
